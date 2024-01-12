@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style type="text/css">
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border">
+        <img src="img/001.jpg" alt="car1" class="rounded">
+        <!-- 살짝 둥근 모서리 -->
+        <img src="img/002.jpg" alt="car2" class="rounded-circle">
+        <!-- 원형 -->
+        <img src="img/003.jpg" alt="car3" class="img-thumbnail">
+        <!-- 둥근 테두리 -->
+    </div><!-- container -->
+
+    <h1 class="border text-center">이미지 정렬하기</h1>
+    <div class="container border" style="overflow: hidden;">
+        <img src="img/normal_01.png" alt="normal_01" class="float-start">
+        <img src="img/normal_02.png" alt="normal_02" class="float-end">
+        <!-- float-left / float-right도 있는데 지금은 안됨 -->
+    </div><!-- container -->
+
+    <div class="container border text-center">
+        <img src="img/animal01.png" alt="animal01" style="width: 600px;"
+        class="d-block mx-auto">
+        <!--mx-auto : 마진 좌우 오토  -->
+    </div><!-- container -->
+    <!--
+        위에서 float을 써서 높이가 사라져서 animal이미지가 치고 올라갔음
+        normal에 오버플로우 히든이나 animal에 클리어 보스 걸어주면 됨 
+    -->
+
+    <h2>이미지 반응형</h2>
+    <div class="container border">
+        <img class="img-fluid"
+        src="img/animal11.png" alt="animal11" style="width: 600px;height: 400px;">
+        
+    </div><!-- container -->
+
+
+</body>
+</html>
