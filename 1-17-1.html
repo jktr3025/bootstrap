@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_4.3.1/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="offcanvas offcanvas-start text-bg-dark" id="leftheader">
+        <div class="offcanvas-header">
+            <h1>off header</h1>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div><!-- offcanvas-header -->
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">menu1</a></li>
+                <li class="list-group-item"><a href="#">menu2</a></li>
+                <li class="list-group-item"><a href="#">menu3</a></li>
+                <li class="list-group-item"><a href="#">menu4</a></li>
+            </ul>
+            <button class="btn btn-secondary mt-3">A button</button>
+        </div><!-- offcanvas-body -->
+    </div><!-- offcanvas -->
+
+
+
+    <div class="container-fluid mt-5">
+        <h1>offcanvas slidebar</h1>
+        <p>offcanvas</p>
+            <button class="btn btn-info" data-bs-target="#leftheader" data-bs-toggle="offcanvas">open offcanvas slidebar</button>
+    </div><!-- container-fluid -->
+<!-- 
+    부트스트랩 5버전에서 
+    애니메이션 속성의 data-target data=toggle은 사이에 bs 추가해줘야 작동
+    ->
+</body>
+</html>
