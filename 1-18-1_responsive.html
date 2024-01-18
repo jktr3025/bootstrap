@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+        .navbar-brand {
+            text-transform: uppercase;
+        }
+
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        .carousel-item {
+            height: 32rem;
+            width: 100%;
+        }
+
+        .carousel-item.car1 {
+            background: url("img/001.jpg") no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .carousel-item.car2 {
+            background: url("img/002.jpg") no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .carousel-item.car3 {
+            background: url("img/003.jpg") no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        /* marketing */
+        .marketing {
+            margin-top: 4rem;
+        }
+
+        .head1 {
+            width: 140px;
+            height: 140px;
+            background: url("img/icon01.png");
+            background-position: center top;
+            background-size: cover;
+        }
+
+        .head2 {
+            width: 140px;
+            height: 140px;
+            background: url("img/icon02.png");
+            background-position: center top;
+            background-size: cover;
+        }
+
+        .head3 {
+            width: 140px;
+            height: 140px;
+            background: url("img/icon03.png");
+            background-position: center top;
+            background-size: cover;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        .marketing .col-lg-4 h2 {
+            margin-top: 0.5rem;
+        }
+
+        .marketing .col-lg-4 h2 p {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+        }
+
+        .devider {
+            margin: 4rem 0;
+        }
+
+        .feature{}
+        .feature h2{
+            font-size: 3rem;
+            padding-top: 1rem;
+        }
+        .feature p{
+            padding-top: 2rem;
+            text-align: justify;
+        }
+        .feature img{
+            width: 100%;
+            padding-top: 2rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container-fluid px-2">
+
+                <a href="#" class="navbar-brand">carousel</a>
+
+                <button class="navbar-toggler" type="button" data-bs-target="#navbarCollapse" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarcollapse"> -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link disabled">Disable</a></li>
+                    </ul>
+
+                    <form action="#" class="d-flex">
+                        <input type="search" placeholder="Search" class="form-control me-1">
+                        <button type="submit" class="btn btn-outline-info">Search</button>
+                    </form>
+                </div><!-- collapse -->
+            </div><!-- container-fluid -->
+        </nav><!-- nav -->
+    </header><!-- header -->
+
+    <main id="main">
+        <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+            <div class="dots carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div><!-- dots -->
+
+            <div class="img_inner carousel-inner">
+                <div class="car1 carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example Headline</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam eos magni
+                                itaque sunt alias dolores quaerat, asperiores deserunt libero? Dolore ab facilis
+                                eligendi pariatur voluptas ipsam fugit veniam possimus!
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-primary btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- car1 -->
+
+                <div class="car2 carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Example Headline</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam eos magni
+                                itaque sunt alias dolores quaerat, asperiores deserunt libero? Dolore ab facilis
+                                eligendi pariatur voluptas ipsam fugit veniam possimus!
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-primary btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- car2 -->
+
+                <div class="car3 carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Example Headline</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi laboriosam eos magni
+                                itaque sunt alias dolores quaerat, asperiores deserunt libero? Dolore ab facilis
+                                eligendi pariatur voluptas ipsam fugit veniam possimus!
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-primary btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- car3 -->
+
+            </div><!-- img_inner -->
+
+            <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div><!-- carousel -->
+
+        <div class="container marketing">
+            <div class="row text-center row1">
+
+                <div class="col-lg-4">
+                    <div class="head1 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p><a href="#" class="btn btn-primary">View details &raquo;</a></p>
+                </div><!-- col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <div class="head2 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p><a href="#" class="btn btn-primary">View details &raquo;</a></p>
+                </div><!-- col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <div class="head3 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p><a href="#" class="btn btn-primary">View details &raquo;</a></p>
+                </div><!-- col-lg-4 -->
+
+            </div><!-- row1 -->
+
+            <hr class="devider">
+
+            <div class="row row2 feature">
+                <div class="col-lg-7">
+                    <h2>First featurette heading. It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio aliquid rem minima nisi
+                        quod, rerum sunt obcaecati quibusdam nesciunt reprehenderit praesentium quis nemo eligendi
+                        pariatur a numquam perspiciatis aut.
+                    </p>
+                </div><!-- col-lg-7 -->
+                <div class="col-lg-5">
+                    <img src="img/004.jpg" alt="car">
+                </div><!-- col-lg-5 -->
+            </div><!-- row2 -->
+
+            <hr class="devider">
+
+
+            <div class="row row3 feature">
+                <div class="col-lg-5">
+                    <img src="img/005.jpg" alt="car">
+                </div><!-- col-lg-5 -->
+                <div class="col-lg-7">
+                    <h2>First featurette heading. It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio aliquid rem minima nisi
+                        quod, rerum sunt obcaecati quibusdam nesciunt reprehenderit praesentium quis nemo eligendi
+                        pariatur a numquam perspiciatis aut.
+                    </p>
+                </div><!-- col-lg-7 -->
+            </div><!-- row3 -->
+
+            <hr class="devider">
+
+            
+            <div class="row row4 feature">
+                <div class="col-lg-7">
+                    <h2>First featurette heading. It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio aliquid rem minima nisi
+                        quod, rerum sunt obcaecati quibusdam nesciunt reprehenderit praesentium quis nemo eligendi
+                        pariatur a numquam perspiciatis aut.
+                    </p>
+                </div><!-- col-lg-7 -->
+                <div class="col-lg-5">
+                    <img src="img/006.jpg" alt="car">
+                </div><!-- col-lg-5 -->
+            </div><!-- row4 -->
+
+
+        </div><!-- marketing -->
+        
+    </main><!-- main -->
+
+    <footer id="footer" class="bg-dark py-3 text-white mt-5">
+        <div class="container">
+            <p class="float-end"><a href="#header" class="btn btn-outline-info">Back To Top</a></p>
+            <p>
+                copyright &copy; 2024 compuny, INC.
+            </p>
+        </div><!-- container -->
+    </footer><!-- footer -->
+</body>
+
+</html>
